@@ -14,7 +14,7 @@ class Customer(models.Model):
         (MEMBERSHIP_SILVER, 'Silver'),
         (MEMBERSHIP_GOLD, 'Gold'),
     ]
-
+    image = models.ImageField(upload_to='store/images')
     phone = models.CharField(max_length=255)
     birth_date = models.DateField(null=True, blank=True)
     membership = models.CharField(
@@ -50,7 +50,6 @@ class CartItem(models.Model):
     class Meta:
         unique_together = [['cart', 'product']]
     
-
 
 class Order(models.Model):
     PAYMENT_STATUS_PENDING = 'P'

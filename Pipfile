@@ -8,8 +8,12 @@ django = "*"
 mysqlclient = "*"
 pillow = "*"
 djangorestframework = "*"
-django-extensions = "*"
-pygraphviz = "*"
+djoser = "*"
+djangorestframework-simplejwt = "*"
+drf-nested-routers = "*"
+django-debug-toolbar = "*"
+django-cors-headers = "*"
+django-filter = "*"
 
 [dev-packages]
 
